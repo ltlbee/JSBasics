@@ -5,13 +5,18 @@
 
 function depositCalculator(input){
 
-let deoistuSum = Number(input[0]);
+let depositSum = Number(input[0]);
 
 let term = Number(input[1]);
 
-let interest = Number(input[2]);
+let interestPercent = Number(input[2]);
 
+let interest = interestPercent / 100
 
+let endSum = depositSum + term * (( depositSum * interest ) / 12 );
+
+console.log(endSum);
 
 }
-depositCalculator(["212", "20","2"])
+depositCalculator(["200", "3","5.7"])
+
