@@ -4,4 +4,4 @@ let result = a * 2.54;
     console.log(result);
 }
 
-convert (["3"])
+convert (["5"])
